@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+      "target": "es2022",                       // Latest stable ECMAScript features
+      "module": "commonjs",                     // Node.js default
+      "lib": ["es2022", "DOM"],                 // Include DOM for potential integrations
+      "outDir": "./dist",                       // Output folder
+      "rootDir": "./src",                       // Source folder
+      "strict": true,                           // Enable strict type checks
+      "esModuleInterop": true,                  // Enable interoperability with CommonJS modules
+      "moduleResolution": "node",               // Resolve modules like Node.js does
+      "resolveJsonModule": true,                // Import JSON files if needed
+      "allowJs": false,                         // Stick to TypeScript only
+      "skipLibCheck": true,                     // Ignore type checks for libraries
+      "forceConsistentCasingInFileNames": true, // Prevent case-related bugs
+      "noImplicitAny": true,                    // Disallow implicit any types
+      "noUnusedLocals": true,                   // Warn about unused local variables
+      "noUnusedParameters": true,               // Warn about unused function parameters
+      "noFallthroughCasesInSwitch": true,       // Prevent unintentional fallthrough in switch statements
+      "allowSyntheticDefaultImports": true,     // Simplify imports for various libraries
+      "experimentalDecorators": true,          // Enable decorators if needed
+      "emitDecoratorMetadata": true            // Emit metadata for class decorators
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "dist", "**/*.test.ts"]
+  }
+  
